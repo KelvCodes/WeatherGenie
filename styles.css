@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur;
+    transition: background 0.5s ease-in-out; /* Smooth transition for background change */
+}
+
+body.cold-background {
+    background: url('cold-weather-bg.jpg') no-repeat; /* Cold weather background */
+    background-size: cover;
+    background-position: center;
+}
+
+body.hot-background {
+    background: url('hot-weather-bg.jpg') no-repeat; /* Hot weather background */
+    background-size: cover;
+    background-position: center;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+body > a {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    text-decoration: none;
+    color: burlywood;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .3s ease-in;
+}
+
+body > a:hover {
+    color: white;
+}
+
+.container {
+    color: white;
+    font-size: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    line-height: 100%;
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+}
+
+header h5:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.search-grp {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    transition: .3s;
+    margin: 1rem;
+}
+
+#search-input:focus {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+button {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 5rem;
+    height: 50px;
+    padding: 0 1.1rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+#date {
+    font-weight: 200;
+}
+
+.temperature {
+    font-size: 100px;
+    text-shadow: 5px 5px 10px black;
+    color: burlywood;
+}
+
+#temperature-degree {
+    font-size: 200px;
+    position: relative;
+    line-height: 150%;
+    text-shadow: 5px 5px 10px black;
+    color: burlywood;
+}
+
+.details {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+#description-text {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#description-img {
+    width: 3em;
+}
+
+#city {
+    text-transform: capitalize;
+}
+
+section,
+#city {
+    display: none;
+}
+
+#loc-btn {
+    background: burlywood;
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+#loc-btn:hover {
+    background: rgba(0, 0, 0, .4);
+    border: 2px solid burlywood;
+}
+
+button i {
+    margin: 0 .5rem;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+
+    body > a {
+        left: 50%;
+        top: 2rem;
+        transform: translateX(-50%);
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #search-input,
+    .loading {
+        width: 65%;
+    }
+
+    .details {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #temperature-degree {
+        font-size: 20vw;
+    }
+
+    .temperature {
+        font-size: 15vw;
+    }
+}
