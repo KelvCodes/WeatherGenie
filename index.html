@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon (Icon for the title bar) -->
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Weather Genie</title>
+  </head>
+  <body>
+    <a href="">Weather App</a>
+    <div class="container">
+      <header>
+        <h5> Search weather in</h5>
+        <div class="search-grp">
+          <form action="#">
+            <input type="text" placeholder="Enter location..." id="search-input" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <h3 id="city"></h3>
+        <h6 id="date"></h6>
+      </header>
+      <section>
+          <div class="temperature"><span id="temperature-degree"></span> C </div>
+          <div class="description">
+              <img src="" alt="" id="description-img">
+              <div id="description-text"></div>
+          </div>
+          <div class="details">
+            <div id="humidity" class="grp">
+                <span><i class="fa-solid fa-temperature-empty"></i> Humidity</span>
+                <h3 id="humidity-degree"></h3>
+            </div>
+            <div id="feelslike" class="grp">
+                <span><i class="fa-solid fa-droplet"></i> Feels like</span>
+                <h3 id="feelslike-degree"></h3>
+            </div>
+          </div>
+      </section>
+      <button onclick="getLocationData()" id="loc-btn">
+        <i class="fa-solid fa-location-dot"></i> View Current location <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
