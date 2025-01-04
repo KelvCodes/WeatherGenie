@@ -26,42 +26,60 @@
     <title>Weather Genie</title>
   </head>
   <body>
-    <a href="">Weather Genie</a>
+    <header>
+      <h1><a href="/" title="Go to homepage">Weather Genie</a></h1>
+    </header>
+
     <div class="container">
-      <header>
-        <h5> Search weather in</h5>
+      <section class="weather-search">
+        <h2>Search weather in</h2>
         <div class="search-grp">
-          <form action="#">
-            <input type="text" placeholder="Enter location..." id="search-input" />
-            <button type="submit">
+          <form action="#" aria-label="Search for weather location">
+            <label for="search-input" class="visually-hidden">Enter location</label>
+            <input type="text" id="search-input" placeholder="Enter location..." aria-describedby="search-help" />
+            <button type="submit" aria-label="Search weather">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
+          <small id="search-help" class="form-text">Enter a city or place to see the weather details.</small>
         </div>
-        <h3 id="city"></h3>
-        <h6 id="date"></h6>
-      </header>
-      <section>
-          <div class="temperature"><span id="temperature-degree"></span> C </div>
-          <div class="description">
-              <img src="" alt="" id="description-img">
-              <div id="description-text"></div>
-          </div>
-          <div class="details">
-            <div id="humidity" class="grp">
-                <span><i class="fa-solid fa-temperature-empty"></i> Humidity</span>
-                <h3 id="humidity-degree"></h3>
-            </div>
-            <div id="feelslike" class="grp">
-                <span><i class="fa-solid fa-droplet"></i> Feels like </span>
-                <h3 id="feelslike-degree"></h3>
-            </div>
-          </div>
       </section>
-      <button onclick="getLocationData()" id="loc-btn">
+
+      <section class="weather-info">
+        <h3 id="city"></h3>
+        <p id="date"></p>
+
+        <div class="temperature">
+          <span id="temperature-degree"></span> °C
+        </div>
+
+        <div class="description">
+          <img src="" alt="" id="description-img" />
+          <p id="description-text"></p>
+        </div>
+
+        <div class="details">
+          <div id="humidity" class="grp">
+            <span><i class="fa-solid fa-temperature-empty"></i> Humidity</span>
+            <h3 id="humidity-degree"></h3>
+          </div>
+
+          <div id="feelslike" class="grp">
+            <span><i class="fa-solid fa-droplet"></i> Feels like</span>
+            <h3 id="feelslike-degree"></h3>
+          </div>
+        </div>
+      </section>
+
+      <button onclick="getLocationData()" id="loc-btn" aria-label="View weather for your current location">
         <i class="fa-solid fa-location-dot"></i> View current location <i class="fa-solid fa-location-dot"></i>
       </button>
     </div>
+
+    <footer>
+      <p>&copy; 2025 Weather Genie. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
