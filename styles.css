@@ -1,34 +1,40 @@
+/* CSS Variables for Theming */
+:root {
+    --primary-bg: rgba(0, 0, 0, 0.5);
+    --accent-color: burlywood;
+    --hover-accent: rgba(255, 255, 255, 0.2);
+    --transition-duration: 0.3s;
+    --font-family-main: "Poppins", sans-serif;
+    --font-family-alt: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+    font-family: var(--font-family-main);
 }
 
 body {
     background: url(bg.jpg) no-repeat;
     background-size: cover;
     backdrop-filter: blur;
-    transition: background 0.5s ease-in-out; /* Smooth transition for background change */
+    transition: background var(--transition-duration) ease-in-out;
 }
 
 body.cold-background {
-    background: url('cold-weather-bg.jpg') no-repeat; /* Cold weather background */
-    background-size: cover;
-    background-position: center;
+    background: url('cold-weather-bg.jpg') no-repeat center center / cover;
 }
 
 body.hot-background {
-    background: url('hot-weather-bg.jpg') no-repeat; /* Hot weather background */
-    background-size: cover;
-    background-position: center;
+    background: url('hot-weather-bg.jpg') no-repeat center center / cover;
 }
 
 body::after {
     content: '';
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, .5);
+    background: var(--primary-bg);
     z-index: -1;
 }
 
@@ -37,12 +43,12 @@ body > a {
     left: 1rem;
     top: 1rem;
     text-decoration: none;
-    color: burlywood;
+    color: var(--accent-color);
     font-size: 38px;
     font-weight: bold;
     letter-spacing: 7px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: .3s ease-in;
+    font-family: var(--font-family-alt);
+    transition: color var(--transition-duration);
 }
 
 body > a:hover {
@@ -61,33 +67,21 @@ body > a:hover {
     text-align: center;
 }
 
-header {
-    line-height: 100%;
-    backdrop-filter: blur(25px);
-    border-radius: 15px;
-}
-
-header h5:nth-child(1) {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.search-grp {
-    display: flex;
-    align-items: center;
+/* Reuse Variables for Input and Button Styles */
+input,
+button {
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 0 1.1rem;
+    transition: background var(--transition-duration);
 }
 
 #search-input {
     width: 400px;
-    height: 50px;
-    padding-left: 10px;
-    font-size: 1.3rem;
-    border-radius: 5rem;
-    border: none;
-    outline: none;
-    background: rgba(0, 0, 0, .5);
+    background: var(--primary-bg);
     color: white;
-    transition: .3s;
     margin: 1rem;
 }
 
@@ -96,91 +90,28 @@ header h5:nth-child(1) {
 }
 
 button {
-    background: rgba(255, 255, 255, .1);
-    border-radius: 5rem;
-    height: 50px;
-    padding: 0 1.1rem;
+    background: var(--hover-accent);
     color: white;
     cursor: pointer;
-    border: none;
-    outline: none;
-    transition: .2s;
 }
 
 button:hover {
-    background: rgba(255, 255, 255, .2);
-}
-
-#date {
-    font-weight: 200;
-}
-
-.temperature {
-    font-size: 100px;
-    text-shadow: 5px 5px 10px black;
-    color: burlywood;
-}
-
-#temperature-degree {
-    font-size: 200px;
-    position: relative;
-    line-height: 150%;
-    text-shadow: 5px 5px 10px black;
-    color: burlywood;
-}
-
-.details {
-    font-size: 26px;
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-}
-
-#description-text {
-    margin-bottom: 2rem;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-weight: 300;
-    font-size: 1.5rem;
-}
-
-#description-img {
-    width: 3em;
-}
-
-#city {
-    text-transform: capitalize;
-}
-
-section,
-#city {
-    display: none;
+    background: var(--primary-bg);
 }
 
 #loc-btn {
-    background: burlywood;
-    font-size: 1rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-    padding: .5rem 1rem;
-    border-radius: 5rem;
-    border: 2px solid transparent;
+    background: var(--accent-color);
     font-weight: bold;
+    border: 2px solid transparent;
 }
 
 #loc-btn:hover {
-    background: rgba(0, 0, 0, .4);
-    border: 2px solid burlywood;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--accent-color);
 }
 
-button i {
-    margin: 0 .5rem;
-}
-
-/* Media Query for smaller screens */
+/* Responsive Adjustments */
 @media screen and (max-width: 600px) {
-
     body > a {
         left: 50%;
         top: 2rem;
@@ -189,17 +120,10 @@ button i {
 
     .container {
         width: 90%;
-        margin: 0 auto;
     }
 
-    #search-input,
-    .loading {
+    #search-input {
         width: 65%;
-    }
-
-    .details {
-        width: 100%;
-        margin: 0 auto;
     }
 
     #temperature-degree {
