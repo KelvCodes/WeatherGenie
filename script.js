@@ -2,89 +2,105 @@ const input = document.getElementById("search-input");
 const description = document.getElementById("description-text");
 const img = document.getElementById("description-img");
 const locBtn = document.getElementById("loc-btn");
-const section = document.querySelector("section");
+const section = document.querySelector(".weather-info");
 const form = document.querySelector("form");
 
+const API_KEY = "ca695dcbc66c5fa3d0cb955033fd918f"; // Store API key in a variable for easier management
+
+// Fetch and display weather data for a given city
 function getData(e) {
   e.preventDefault();
+  const city = input.value.trim();
 
-  if (!input.value) {
-    alert("Please Enter a city name");
+  if (!city) {
+    alert("Please enter a city name.");
     return;
-  } else {
-    fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=ca695dcbc66c5fa3d0cb955033fd918f`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        displayWeather(data);
-        document.getElementById("city").style.display = "block";
-      });
   }
+
+  fetchWeatherData(`q=${city}`);
 }
 
+// Fetch and display weather data for the current location
 function getLocationData() {
   if (!navigator.geolocation) {
-    alert("geolocation is not supported!");
+    alert("Geolocation is not supported by your browser.");
     return;
-  } else {
-    navigator.geolocation.getCurrentPosition((position) => {
-      fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=ca695dcbc66c5fa3d0cb955033fd918f`
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          displayWeather(data);
-          document.querySelector("header h5").style.display = "none";
-          document.getElementById("city").textContent = "current location";
-        });
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const { latitude, longitude } = position.coords;
+      fetchWeatherData(`lat=${latitude}&lon=${longitude}`);
+    },
+    () => {
+      alert("Unable to retrieve your location.");
+    }
+  );
+}
+
+// Fetch weather data from OpenWeatherMap API
+function fetchWeatherData(query) {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?${query}&appid=${API_KEY}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("City not found. Please try again.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      displayWeather(data);
+    })
+    .catch((error) => {
+      alert(error.message);
     });
-  }
 }
 
-addEventListener("load", () => {
-  const date = document.getElementById("date");
-
-  const d = new Date();
-  let currentDate = d.toString().slice(4, 15);
-
-  date.innerHTML = currentDate;
-});
-
+// Display the fetched weather data
 function displayWeather(data) {
-  document.querySelector("header h5").style.display = "block";
+  const temp = (data.main.temp - 273.15).toFixed(1); // Convert Kelvin to Celsius
+  const feelsLike = (data.main.feels_like - 273.15).toFixed(1);
+  const humidity = data.main.humidity;
+  const weatherDescription = data.weather[0].description;
+  const weatherIcon = data.weather[0].icon;
 
-  const temp = (data.main.temp - 273.15).toFixed(1); // Convert from Kelvin to Celsius
-  console.log(temp);
+  // Update UI elements
+  document.getElementById("temperature-degree").textContent = `${temp}°C`;
+  document.getElementById("feelslike-degree").textContent = `${feelsLike}°C`;
+  document.getElementById("humidity-degree").textContent = `${humidity} %`;
+  description.textContent = weatherDescription;
+  img.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 
-  document.getElementById("temperature-degree").textContent = temp + "°";
-  document.getElementById("city").textContent = input.value;
+  const city = data.name || "Your current location";
+  document.getElementById("city").textContent = city;
 
-  document.getElementById("humidity-degree").textContent =
-    data.main.humidity + " %";
-  document.getElementById("feelslike-degree").textContent =
-    (data.main.feels_like - 273.15).toFixed(1) + " °";
+  // Update the background based on temperature
+  updateBackground(temp);
 
-  description.textContent = data.weather[0].description;
-
-  img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-
+  // Display the weather section
   section.style.display = "block";
-  section.classList.add("test");
-  document.getElementById("city").style.display = "block";
   locBtn.style.display = "none";
+}
 
-  // Set background based on temperature
+// Update background based on temperature
+function updateBackground(temp) {
+  document.body.classList.remove("cold-background", "hot-background");
+
   if (temp < 15) {
-    document.body.classList.add("cold-background"); // Add cold background
-    document.body.classList.remove("hot-background");
+    document.body.classList.add("cold-background");
   } else if (temp > 30) {
-    document.body.classList.add("hot-background"); // Add hot background
-    document.body.classList.remove("cold-background");
-  } else {
-    document.body.classList.remove("cold-background", "hot-background"); // Remove both if temp is moderate
+    document.body.classList.add("hot-background");
   }
 }
 
-// Event listeners
+// Set the current date
+function setCurrentDate() {
+  const dateElement = document.getElementById("date");
+  const today = new Date();
+  const formattedDate = today.toDateString();
+  dateElement.textContent = formattedDate;
+}
+
+// Event Listeners
 form.addEventListener("submit", getData);
+locBtn.addEventListener("click", getLocationData);
+window.addEventListener("load", setCurrentDate);
