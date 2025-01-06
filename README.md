@@ -8,3 +8,5 @@ WeatherGenie is an online weather app 🌦️carefully built with HTML5, CSS3, a
 
 With its user-friendly design and reliable climate insights, WeatherGenie makes weather tracking 🌈 effortless impeccable. Stay ahead of any storm 🌩️ or sunshine ☀️ with much ease!
 Try is now 🔥
+
+Key Technologies 🖥 
