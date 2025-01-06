@@ -1,4 +1,4 @@
-🌤️ WeatherGenie:
+Hey there 🌤️ WeatherGenie:
 Your sleek,smart and portable weather companion!
 
 WeatherGenie is an online weather app 🌦️carefully built with HTML5, CSS3, and JavaScript, delivering:
