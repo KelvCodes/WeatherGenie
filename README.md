@@ -1,5 +1,6 @@
 Hey there 👋
 Introducing the newest portable Genie in town 🤭 
+Say Hello to WeatherGenie 🥶 
 🌤️ WeatherGenie:
 Your sleek,smart and portable weather companion!
 
