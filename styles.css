@@ -6,7 +6,7 @@
     --secondary-bg: rgba(255, 255, 255, 0.1);
     --primary-text: #ffffff;
     --secondary-text: #c1c1c1;
-    --transition-duration: 0.3s;
+    --transition-duration: 0.25s;
     --font-family-main: "Poppins", sans-serif;
     --font-family-alt: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
