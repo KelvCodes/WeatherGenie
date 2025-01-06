@@ -11,3 +11,4 @@ Try is now 🔥
 
 Key Technologies 🖥 
 1. HTML 5
+2. CSS3
