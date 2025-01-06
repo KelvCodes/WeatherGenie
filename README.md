@@ -7,4 +7,4 @@ WeatherGenie is an online weather app 🌦️ built with HTML5, CSS3, and JavaSc
 📅 Accurate predictions to plan your days ahead!
 
 With its user-friendly design and reliable climate insights, WeatherGenie makes weather tracking 🌈 effortless. Stay ahead of any storm 🌩️ or sunshine ☀️ with much ease!
-
+Try is now 
