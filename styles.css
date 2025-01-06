@@ -79,7 +79,7 @@ header h1 a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.1rem;
 }
 
 form {
