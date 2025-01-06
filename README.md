@@ -10,3 +10,4 @@ With its user-friendly design and reliable climate insights, WeatherGenie makes 
 Try is now 🔥
 
 Key Technologies 🖥 
+1. HTML 5
