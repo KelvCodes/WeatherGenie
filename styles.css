@@ -61,7 +61,7 @@ header h1 a:hover {
 
 .container {
     color: var(--primary-text);
-    min-height: 100vh;
+    min-height: 99vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
