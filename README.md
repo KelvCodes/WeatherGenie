@@ -1,5 +1,5 @@
 🌤️ WeatherGenie:
-Your sleek and smart weather companion!
+Your sleek,smart and portable weather companion!
 
 WeatherGenie is an online weather app 🌦️ built with HTML5, CSS3, and JavaScript, delivering:
 ✨ Real-time updates to keep you informed.
