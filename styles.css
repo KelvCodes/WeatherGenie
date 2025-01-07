@@ -175,13 +175,22 @@ button:hover {
     transition: border var(--transition-duration);
 }
 
-footer {
-    margin-top: auto;
-    text-align: center;
-    padding: 1rem;
-    color: var(--secondary-text);
-    font-size: 1rem;
-}
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .developer-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover; /* Ensures the image scales nicely */
+  }
+  
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
