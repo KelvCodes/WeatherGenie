@@ -99,7 +99,7 @@ function setCurrentDate() {
   dateElement.textContent = formattedDate;
 }
 
-// Event Listeners
+//The Event Listeners
 form.addEventListener("submit", getData);
 locBtn.addEventListener("click", getLocationData);
 window.addEventListener("load", setCurrentDate);
