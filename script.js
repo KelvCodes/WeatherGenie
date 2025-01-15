@@ -11,7 +11,7 @@ function getData(e) {
   e.preventDefault();
   const city = input.value.trim();
 
-  if (!city) {
+ if (!city) {
     alert("Please enter a city's name.");
     return;
   }
