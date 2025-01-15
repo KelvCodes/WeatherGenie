@@ -80,7 +80,7 @@ function displayWeather(data) {
   locBtn.style.display = "none";
 }
 
-// Update background based on temperature
+// Update the background based on temperature
 function updateBackground(temp) {
   document.body.classList.remove("cold-background", "hot-background");
 
