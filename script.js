@@ -98,7 +98,6 @@ function setCurrentDate() {
   const formattedDate = today.toDateString();
   dateElement.textContent = formattedDate;
 }
-
 //The Event Listeners
 form.addEventListener("submit", getData);
 locBtn.addEventListener("click", getLocationData);
