@@ -37,7 +37,7 @@ function getLocationData() {
   );
 }
 
-// Fetch weather data from OpenWeatherMap API
+// Fetch weather data, from OpenWeatherMap API
 function fetchWeatherData(query) {
   fetch(`https://api.openweathermap.org/data/2.5/weather?${query}&appid=${API_KEY}`)
     .then((response) => {
