@@ -62,7 +62,7 @@ function displayWeather(data) {
   const weatherDescription = data.weather[0].description;
   const weatherIcon = data.weather[0].icon;
 
-  // Update UI elements
+  // Update the UI elements
   document.getElementById("temperature-degree").textContent = `${temp}°C`;
   document.getElementById("feelslike-degree").textContent = `${feelsLike}°C`;
   document.getElementById("humidity-degree").textContent = `${humidity} %`;
