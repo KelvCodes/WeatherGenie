@@ -22,7 +22,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
    ```
 2. Navigate to the project folder:  
    ```bash
-   cd listnest
+   cd weather-genie
    ```
 3. Open `index.html` in your favorite browser 🌐, and you're good to go!  
 
