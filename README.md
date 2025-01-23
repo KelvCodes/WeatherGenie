@@ -37,7 +37,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 ---
 
 ## 🎯 **Planned Features**
-- ⏰ **Weather Alerts**: Notifications for upcoming deadlines.  
+- ⏰ **Weather Alerts**: Notifications for severe weather changes.  
 - 🌙 **Dark Mode**: Switch to a soothing dark theme for nighttime use.  
 - ☁️ **Cloud Sync**: Access your tasks from multiple devices.  
 - 🔀 **Drag & Drop**: Reorganize tasks to prioritize effectively.  
