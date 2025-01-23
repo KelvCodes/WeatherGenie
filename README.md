@@ -10,7 +10,8 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 -  ⛅ **5-Day Forecast**: Plan ahead with detailed weather forecasts for the next five days.  
 - 🔍 **Search by Location**: Find weather data for any city worldwide or enable geolocation for automatic updates 
 -  🌍 **Dynamic Visuals**: Beautiful and responsive animations that match real-time weather conditions.  
-- 💾 **Persistent Storage**: Your tasks and history are securely saved using localStorage.  
+-  🔒 **Data Persistence**: Seamlessly save and retrieve your favorite cities and settings.
+  
 - 🎨 **Modern UI**: Soft colors, subtle animations, and an elegant layout to enhance your experience.  
 
 ---
