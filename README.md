@@ -46,7 +46,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 ---
 
 ## 🤝 **Contributing**
-We’d love your help in making **ListNest** even better!  
+We’d love your help in making **Weather Genie** even better!  
 - Fork the repository.  
 - Create a new branch for your feature or bug fix.  
 - Submit a pull request with your changes.  
