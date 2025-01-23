@@ -7,7 +7,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 
 ## 🌟 **Key Features of Weather Genie**
 - ☀️ **Real-Time Weather Updates**: Access the latest temperature, humidity, wind speed, and weather conditions with ease.  
--  ⛅ **5-Day Forecast**: Plan ahead with detailed weather forecasts for the next five days.  
+-  ⛅ **5-Day Forecasts**: Plan ahead with detailed weather forecasts for the next five days.  
 - 🔍 **Search by Location**: Find weather data for any city worldwide or enable geolocation for automatic updates 
 -  🌍 **Dynamic Visuals**: Beautiful and responsive animations that match real-time weather conditions.  
 -  🔒 **Data Persistence**: Seamlessly save and retrieve your favorite cities and settings.  
