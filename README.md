@@ -38,7 +38,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 
 ## 🎯 **Planned Features**
 - ⏰ **Weather Alerts**: Notifications for severe weather changes.  
-- 🌙 **Hourly Forecast**: Switch to a soothing dark theme for nighttime use.  
+- 🌙 **Hourly Forecast**: Hour-by-hour weather predictions.  
 - ☁️ **Cloud Sync**: Access your tasks from multiple devices.  
 - 🔀 **Drag & Drop**: Reorganize tasks to prioritize effectively.  
 
