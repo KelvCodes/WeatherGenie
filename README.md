@@ -40,7 +40,8 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 - ⏰ **Weather Alerts**: Notifications for severe weather changes.  
 - 🌙 **Hourly Forecast**: Hour-by-hour weather predictions.  
 - ☁️ **Dark Mode**:   Switch to comfortable dark theme for nighttime use.
-- 🔀 **Multi-Language Support**: Reorganize tasks to prioritize effectively.  
+- 🔀 **Multi-Language Support**: View forecast in your preferred language.  
+
 
 ---
 
