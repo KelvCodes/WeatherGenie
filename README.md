@@ -15,7 +15,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 
 ---
 
-## 🚀 **How to Get ListNest**
+## 🚀 **How to Get Weather Genie**
 1. Clone the repository to your local machine:  
    ```bash
    git clone https://github.com/your-username/listnest.git
