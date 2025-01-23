@@ -5,7 +5,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 
 ---
 
-## 🌟 **Key Features of ListNest**
+## 🌟 **Key Features of Weather Genie**
 - ✍️ **Add Tasks Effortlessly**: Quickly add tasks with a single click or by pressing "Enter."  
 - 🗑️ **Easy Task Removal**: Clean up your to-do list by deleting completed tasks in real-time.  
 - 🕒 **Task History**: Keep track of completed tasks with timestamps to review your progress.  
