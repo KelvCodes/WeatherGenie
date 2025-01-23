@@ -8,7 +8,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 ## 🌟 **Key Features of Weather Genie**
 - ☀️ **Real-Time Weather Updates**: Access the latest temperature, humidity, wind speed, and weather conditions with ease.  
 -  ⛅ **5-Day Forecast**: Plan ahead with detailed weather forecasts for the next five days.  
-- 🕒 **Task History**: Keep track of completed tasks with timestamps to review your progress.  
+- 🔍 **Search by Location**: Find weather data for any city worldwide or enable geolocation for automatic updates 
 - 📱 **Responsive Design**: Enjoy a seamless experience on desktops, tablets, or mobile devices.  
 - 💾 **Persistent Storage**: Your tasks and history are securely saved using localStorage.  
 - 🎨 **Modern UI**: Soft colors, subtle animations, and an elegant layout to enhance your experience.  
