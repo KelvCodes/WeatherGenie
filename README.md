@@ -1,6 +1,7 @@
 # **Weather Genie - Your Ultimate Weather Companion ☁️🌧️**
 
-Stay well organized, boost productivity, and achieve your goals with **ListNest**! Whether you're juggling work tasks 💼, planning a big project 📋, or keeping track of daily errands 🛒, **ListNest** has got you covered.  
+Stay informed, plan your day effectively, and enjoy real-time weather updates with **Weather Genie**! Whether you're heading out for work 💼, planning a vacation 🌊, or just curious about the weather ☁️, **Weather Genie** has all the information you need.
+
 
 ---
 
