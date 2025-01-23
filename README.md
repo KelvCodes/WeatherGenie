@@ -57,7 +57,7 @@ For major changes, please open an issue first to discuss your ideas openly.
 
 
 
-💡 **Weather Genie** is more than justan app; your productivity companion! Let us know what you think or share how ListNest is helping you get things done with ease. 💬  
+💡 **Weather Genie** is more than justan app;yit's your daily weather assitant! Let us know what you think or share how ListNest is helping you get things done with ease. 💬  
 
 ---
 
