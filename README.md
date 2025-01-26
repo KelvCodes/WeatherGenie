@@ -78,4 +78,6 @@ For major changes, please open an issue first to discuss your ideas openly. or l
 
 ---
 
+### 💡 Support My Work  
+If you enjoy my projects, feel free to [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-%F0%9F%8C%8D-yellow?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/kelvcodes) 
 
