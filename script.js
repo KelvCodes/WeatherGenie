@@ -1,12 +1,5 @@
 ain.temp - 273.15).toFixed(1); // Convert Kelvin to Celsius
-yId("humidity-degree").textContent = `${humidity} %`;
-  description.textContent = weatherDescription;
-  img.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
-
-  const city = data.name || "Your current location";
-  document.getElementById("city").textContent = city;
-
-  // Update the background based on temperature
+yId(round based on temperature
   updateBackground(temp);
 
   // Display the weather section
