@@ -1,14 +1,6 @@
 
     background: url(bg.jpg) no-repeat center center / cover;
-    color: var(--primary-text);
-    transition: background var(--transition-duration) ease-in-out, color var(--transition-duration);
-}
-
-body.cold-background {
-    background: url('cold-weather-bg.jpg') no-repeat center center / cover;
-}
-
-body.hot-background {
+    c
     background: url('hot-weather-bg.jpg') no-repeat center center / cover;
 }
 
