@@ -1,10 +1,5 @@
 const input = document.getElementById("search-input");
-const description = document.getElementById("description-text");
-const img = document.getElementById("description-img");
-const locBtn = document.getElementById("loc-btn");
-const section = document.querySelector(".weather-info");
-const form = document.querySelector("form");
-const API_KEY = "ca695dcbc66c5fa3d0cb955033fd918f"; // Store API key in a variable for easier management
+EY = "ca695dcbc66c5fa3d0cb955033fd918f"; // Store API key in a variable for easier management
 
 // Fetch and display weather data for a given city
 function getData(e) {
