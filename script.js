@@ -1,16 +1,4 @@
-n is not supported by your browser.");
-
-    .then((data) => {
-      displayWeather(data);
-    })
-    .catch((error) => {
-      alert(error.message);
-    });
-}
-
-// Display the fetched weather data
-function displayWeather(data) {
-  const temp = (data.main.temp - 273.15).toFixed(1); // Convert Kelvin to Celsius
+ain.temp - 273.15).toFixed(1); // Convert Kelvin to Celsius
   const feelsLike = (data.main.feels_like - 273.15).toFixed(1);
   const humidity = data.main.humidity;
   const weatherDescription = data.weather[0].description;
