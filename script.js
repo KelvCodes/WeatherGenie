@@ -1,13 +1,5 @@
 ain.temp - 273.15).toFixed(1); // Convert Kelvin to Celsius
-  const feelsLike = (data.main.feels_like - 273.15).toFixed(1);
-  const humidity = data.main.humidity;
-  const weatherDescription = data.weather[0].description;
-  const weatherIcon = data.weather[0].icon;
-
-  // Update the UI elements
-  document.getElementById("temperature-degree").textContent = `${temp}°C`;
-  document.getElementById("feelslike-degree").textContent = `${feelsLike}°C`;
-  document.getElementById("humidity-degree").textContent = `${humidity} %`;
+yId("humidity-degree").textContent = `${humidity} %`;
   description.textContent = weatherDescription;
   img.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 
