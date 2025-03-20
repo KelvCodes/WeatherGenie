@@ -1,13 +1,4 @@
-/* CSS Variables for Theming */
-:root {
-    --primary-bg: rgba(0, 0, 0, 0.5);
-    --accent-color: burlywood;
-    --hover-accent: rgba(255, 255, 255, 0.2);
-    --secondary-bg: rgba(255, 255, 255, 0.1);
-    --primary-text: #ffffff;
-    --secondary-text: #c1c1c1;
-    --transition-duration: 0.25s;
-    --font-family-main: "Poppins", sans-serif;
+--font-family-main: "Poppins", sans-serif;
     --font-family-alt: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
