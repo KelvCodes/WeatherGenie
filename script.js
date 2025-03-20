@@ -2,14 +2,7 @@ n is not supported by your browser.");
     return;
   }
 
-  navigator.geolocation.getCurrentPosition(
-    (position) => {
-      const { latitude, longitude } = position.coords;
-      fetchWeatherData(`lat=${latitude}&lon=${longitude}`);
-    },
-    () => {
-      alert("Unable to retrieve your location.");
-    }
+  naviga
   );
 }
 
