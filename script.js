@@ -1,10 +1,4 @@
 n is not supported by your browser.");
-    return;
-  }
-
-  naviga
-  );
-}
 
 // Fetch weather data, from OpenWeatherMap API
 function fetchWeatherData(query) {
