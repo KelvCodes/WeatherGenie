@@ -1,15 +1,4 @@
---font-family-main: "Poppins", sans-serif;
-    --font-family-alt: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family-main);
-}
-
-body {
     background: url(bg.jpg) no-repeat center center / cover;
     color: var(--primary-text);
     transition: background var(--transition-duration) ease-in-out, color var(--transition-duration);
