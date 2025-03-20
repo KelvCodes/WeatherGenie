@@ -1,12 +1,4 @@
-const input = document.getElementById("search-input");
-EY = "ca695dcbc66c5fa3d0cb955033fd918f"; // Store API key in a variable for easier management
-
-// Fetch and display weather data for a given city
-function getData(e) {
-  e.preventDefault();
-  const city = input.value.trim();
-
- if (!city) {
+cons
     alert("Please enter a city's name.");
     return;
   }
