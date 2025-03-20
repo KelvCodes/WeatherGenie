@@ -1,14 +1,5 @@
 n is not supported by your browser.");
 
-// Fetch weather data, from OpenWeatherMap API
-function fetchWeatherData(query) {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?${query}&appid=${API_KEY}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("City not found. Please try again.");
-      }
-      return response.json();
-    })
     .then((data) => {
       displayWeather(data);
     })
