@@ -1,16 +1,4 @@
 
-    background: url(bg.jpg) no-repeat center center / cover;
-    c
-    background: url('hot-weather-bg.jpg') no-repeat center center / cover;
-}
-
-body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: var(--primary-bg);
-    z-index: -1;
-}
 
 header h1 {
     text-align: center;
