@@ -1,15 +1,4 @@
-cons
-    alert("Please enter a city's name.");
-    return;
-  }
-
-  fetchWeatherData(`q=${city}`);
-}
-
-// Fetch and display weather data for the current location
-function getLocationData() {
-  if (!navigator.geolocation) {
-    alert("Geolocation is not supported by your browser.");
+n is not supported by your browser.");
     return;
   }
 
