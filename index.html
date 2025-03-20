@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.jpg" type="image/jpg">
+  <title>Weather Genie</title>
+</head>
+<body>
+  <header>
+    <h1><a href="/" title="Go to homepage">Weather Genie</a></h1>
+    <div class="dark-mode-toggle">
+      <i class="fas fa-moon" id="toggle-icon"></i>
+    </div>
+  </header>
 
+  <div class="container">
+    <section class="weather-search">
+      <h2>Search Weather In...</h2>
+      <div class="search-grp">
+        <form action="#" aria-label="Search for weather location">
+          <label for="search-input" class="visually-hidden">Enter location</label>
+          <input type="text" id="search-input" placeholder="Enter location..." aria-describedby="search-help" />
+          <button type="submit" aria-label="Search weather">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button type="button" id="voice-search" aria-label="Voice search">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </form>
+        <small id="search-help">Enter a city or use voice search to see weather details.</small>
+      </div>
+    </section>
+
+    <section class="weather-info">
+      <div class="weather-header">
+        <h3 id="city"></h3>
+        <p id="date"></p>
+      </div>
+      <div class="weather-main">
+        <div class="temperature">
+          <span id="temperature-degree"></span>
+          <button id="unit-toggle" aria-label="Toggle temperature unit">°C</button>
+        </div>
+        <div class="description">
+          <img src="" alt="" id="description-img" class="weather-icon" />
+          <p id="description-text"></p>
+        </div>
+      </div>
+      <div class="weather-message" id="weather-message"></div> <!-- New Message Area -->
+      <div class="details">
+        <div class="grp">
+          <i class="fa-solid fa-droplet"></i>
+          <span>Humidity</span>
+          <h3 id="humidity-degree"></h3>
+        </div>
+        <div class="grp">
+          <i class="fa-solid fa-temperature-half"></i>
+          <span>Feels Like</span>
+          <h3 id="feelslike-degree"></h3>
+        </div>
+        <div class="grp">
+          <i class="fa-solid fa-wind"></i>
+          <span>Wind Speed</span>
+          <h3 id="wind-speed"></h3>
+        </div>
+      </div>
+      <div class="forecast">
+        <h4>5-Day Forecast</h4>
+        <div class="forecast-container" id="forecast-container"></div>
+      </div>
+    </section>
+
+    <button onclick="getLocationData()" id="loc-btn" aria-label="View weather for your current location">
+      <i class="fa-solid fa-location-dot"></i> Current Location <i class="fa-solid fa-location-dot"></i>
+    </button>
+  </div>
+
+  <footer>
+    <p>© 2025 Weather Genie. All rights reserved.</p>
+    <p>
+      <img src="main.jpg" alt="Agyare Kelvin Yeboah" class="developer-img" />
+      Agyare Kelvin Yeboah, Full Stack Software Developer
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
