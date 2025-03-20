@@ -1,15 +1,5 @@
 ain.temp - 273.15).toFixed(1); // Convert Kelvin to Celsius
-yId(round based on temperature
-  updateBackground(temp);
-
-  // Display the weather section
-  section.style.display = "block";
-  locBtn.style.display = "none";
-}
-
-// Update the background based on temperature
-function updateBackground(temp) {
-  document.body.classList.remove("cold-background", "hot-background");
+dy.classList.remove("cold-background", "hot-background");
 
   if (temp < 15) {
     document.body.classList.add("cold-background");
