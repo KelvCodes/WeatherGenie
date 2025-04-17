@@ -32,7 +32,7 @@ Stay informed, plan your day effectively, and enjoy real-time weather updates wi
 - **HTML5**: For a clean and accessible structure.  
 - **CSS3**: To style and create a responsive, visually appealing layout you see.  
 - **JavaScript(ES6)**: For dynamic task management and functionality.  
-- **OpenWeatherMap API**: Fectches real-time weather data accurately and sw
+- **OpenWeatherMap API**: Fectches real-time weather data accurately and swif
 
 ---
 
