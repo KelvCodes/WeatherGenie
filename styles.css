@@ -1,14 +1,7 @@
 
 
 ition: var(--transition);
-  }
-  
-  .dark-mode-toggle:hover { color: var(--hover-accent); }
-  
-  .container {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
+  ion: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
