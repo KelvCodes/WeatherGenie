@@ -1,10 +1,4 @@
-old-lass-bg: rgba(0, 0, 0, 0.2);
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+align-items: center;
     padding: 1rem 2rem;
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
