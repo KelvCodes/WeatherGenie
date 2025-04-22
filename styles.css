@@ -1,11 +1,7 @@
 old-background { background: url('cold-weather-bg.jpg') no-repeat center center / cover; }
   body.hot-background { background: url('hot-weather-bg.jpg') no-repeat center center / cover; }
   body.rainy-background { background: url('rainy-weather-bg.jpg') no-repeat center center / cover; }
-  
-  /* Dark Mode */
-  body.dark-mode {
-    --primary-bg: rgba(0, 0, 0, 0.8);
-    --secondary-bg: rgba(0, 0, 0, 0.4);
+ condary-bg: rgba(0, 0, 0, 0.4);
     --accent-color: #00b4d8;
     --hover-accent: #90e0ef;
     --primary-text: #e0e0e0;
