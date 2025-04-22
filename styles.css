@@ -1,12 +1,6 @@
 
 
-  header h1 a:hover { color: var(--hover-accent); }
-  
-  .dark-mode-toggle {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    transition: var(--transition);
+ition: var(--transition);
   }
   
   .dark-mode-toggle:hover { color: var(--hover-accent); }
