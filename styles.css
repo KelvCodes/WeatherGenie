@@ -1,11 +1,4 @@
-fixed;
-    inset: 0;
-    background: var(--primary-bg);
-    z-index: -1;
-    transition: background 0.5s ease;
-  }
-  
-  body.cold-background { background: url('cold-weather-bg.jpg') no-repeat center center / cover; }
+old-background { background: url('cold-weather-bg.jpg') no-repeat center center / cover; }
   body.hot-background { background: url('hot-weather-bg.jpg') no-repeat center center / cover; }
   body.rainy-background { background: url('rainy-weather-bg.jpg') no-repeat center center / cover; }
   
