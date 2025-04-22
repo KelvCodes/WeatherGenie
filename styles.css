@@ -1,9 +1,7 @@
    box-sizing: border-box;
     font-family: var(--font-family);
   }
-  
-  body {
-    background: url('bg.jpg') no-repeat center center / cover;
+  kground: url('bg.jpg') no-repeat center center / cover;
     color: var(--primary-text);
     transition: background 0.5s ease;
     position: relative;
