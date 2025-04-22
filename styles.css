@@ -1,13 +1,4 @@
-
-
-ition: var(--transition);
-  ion: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-  
-  .weather-search {
+her-search {
     text-align: center;
     margin-bottom: 2rem;
     animation: fadeIn 1s ease;
