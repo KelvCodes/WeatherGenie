@@ -1,12 +1,4 @@
-   box-sizing: border-box;
-    font-family: var(--font-family);
-position: relative;
-    min-height: 100vh;
-  }
-  
-  body::after {
-    content: '';
-    position: fixed;
+fixed;
     inset: 0;
     background: var(--primary-bg);
     z-index: -1;
