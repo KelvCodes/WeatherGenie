@@ -4,16 +4,7 @@ hettom: 1rem;
   }
   
   form {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  #search-input {
-    width: 300px;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 25px;
+   -radius: 25px;
     background: var(--glass-bg);
     backdrop-filter: blur(5px);
     color: var(--primary-text);
