@@ -1,8 +1,4 @@
-:root {
-    --primary-bg: rgba(0, 0, 0, 0.5);
-    --secondary-bg: rgba(255, 255, 255, 0.1);
-    --accent-color: #ffd700;
-    --hover-accent: #ffeb3b;
+-hover-accent: #ffeb3b;
     --primary-text: #ffffff;
     --secondary-text: #d1d1d1;
     --glass-bg: rgba(255, 255, 255, 0.05);
