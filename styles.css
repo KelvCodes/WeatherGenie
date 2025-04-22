@@ -1,10 +1,5 @@
 -hover-accent: #ffeb3b;
-    --primary-text: #ffffff;
-    --secondary-text: #d1d1d1;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    --transition: all 0.3s ease;
-    --font-family: "Poppins", sans-serif;
+  ily: "Poppins", sans-serif;
   }
   
   * {
