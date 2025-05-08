@@ -1,6 +1,6 @@
 # **Weather Genie - Your Ultimate Weather Companion ☁️🌧️**
 
-Stay informed, plan your day effectively, and enjoy real-time weather updates with 5-day**Weather Genie**! Whether you're heading out for work 💼, planning a vacation 🌊, or just curious about the weather ☁️, **Weather Genie** has all the information you need.
+Stay informed, plan your day effectively, and enjoy real-time weather updates with 5-day w**Weather Genie**! Whether you're heading out for work 💼, planning a vacation 🌊, or just curious about the weather ☁️, **Weather Genie** has all the information you need.
 
 
 ---
